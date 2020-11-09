@@ -1,0 +1,65 @@
+html {
+	position: relative;
+}
+
+section {
+	min-height: 600px;
+}
+
+.jumbotron {
+	background-image: url('../img/desktop1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	height: 700px;
+	/*parallax*/
+	background-position: 0 - 100px;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+	padding: 0 1.5rem;
+	color: #fff;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.hTengah, .pTengah {
+	opacity: 0;
+	transform: translate(0, -50px);
+	transition: 1s;
+}
+
+.hTengah.hMuncul, .pTengah.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+	
+
+.biodata .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.biodata .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.contact {
+	min-height: 200px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #333;
+	padding-top: 30px;
+}
+
+footer p {
+	color: #aaa;
+	font-size: 0,5em;
+}
